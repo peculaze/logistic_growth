@@ -10,7 +10,10 @@ logistic_fun <- function(t) {
   
 }
 
+
+
 N0 <- exp(6.8941709) #
+N0 <- 879
   
 r <- 0.0100086 #
   
@@ -20,9 +23,9 @@ ggplot(aes(t,N), data = growth_data) +
   
   geom_function(fun=logistic_fun, colour="red") +
   
-  geom_point()
+  geom_point() 
 
-  #scale_y_continuous(trans='log10')
+  scale_y_continuous(trans='log10')
 
 sink(file = "package-versions.txt")
 sessionInfo()
