@@ -1,4 +1,8 @@
 
+N0=986.5075
+r=0.0100086
+K=60000000000
+
 # Population size predicted at t = 4980 under logistic growth: 
 
 logistic_fun <- function(t) {
@@ -20,7 +24,7 @@ exponential_fun(4980) # Outputs 4.37e+24
 
 ## Graph comparing exponential and logistic curves: 
 
-library(gridExtra)
+library(ggpubr)
 
 # Plot of exponential vs logistic growth
 
@@ -56,13 +60,12 @@ comparison.plot.log <- ggplot(data.frame(t = c(0, 5000)), aes(x = t)) +
         axis.ticks = element_line(colour = "#eeeeee"), 
         axis.line.x = element_line(colour = "#eeeeee"),
         axis.line.y = element_line(colour = "#eeeeee"))
-        
 
-comparison.plot.log
+?legend
 
-# Combine plots using gridExtra package
-grid.arrange(comparison.plot.basic, comparison.plot.log, nrow=1, padding = 0)
+# Combine plots using ggpubr package
+ggarrange(comparison.plot.basic,comparison.plot.log, nrow = 1, 
+          labels = c("a)","b)"), font.label = list(size = 12, color = "yellow"))
 
-?grid.arrange
-
+?ggarrange
 
