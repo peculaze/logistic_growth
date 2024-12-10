@@ -40,7 +40,8 @@ r = 0.0100086
 K = 6.00*10^{10}
 \end{equation}
 ```
----
+##
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8653c1fc-f80e-4fb8-9b7f-67b53284008e">
 </p>
@@ -59,13 +60,13 @@ N(t) = N_0 e^{rt}
 
 Plugging 4980 into this equation as t, with N<sub>0</sub> = 986.5075 and r = 0.0100086 gives a value of **4.370846e+24**. This is many magnitudes higher than the population size predicted under logistic growth, which is 6.00e+10. A population of *E. coli* after this stretch of exponential growth would have comparable weight to the Great Wall of China (according to data from spurious internet sources, which suggest this weighs ~50,000,000 tonnes). By comparison, a population under logistic growth would weigh approximately a 20th of a gram. 
 
-## 3) Comparison Plot
+## 3) Plot Comparing Exponential and Logistic Growth
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0bb8f46d-5d1a-4459-8dc5-3062c13b5896">
+  <img src="https://github.com/user-attachments/assets/d85d4153-e73b-4795-854f-5f3b04b3fc9c">
 </p>
 
-***Fig. 2.** Bro what the hell is this graph*
+***Fig. 2.** a) A plot showing the different growth patterns between a population undergoing exponential growth (yellow) vs a population undergoing logistic growth (orange). b) The same plot, with a logarithmic y scale.*##
 
 
 
