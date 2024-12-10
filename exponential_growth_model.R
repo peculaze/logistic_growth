@@ -67,5 +67,6 @@ comparison.plot.log <- ggplot(data.frame(t = c(0, 5000)), aes(x = t)) +
 ggarrange(comparison.plot.basic,comparison.plot.log, nrow = 1, 
           labels = c("a)","b)"), font.label = list(size = 12, color = "yellow"))
 
-?ggarrange
-
+sink(file = "package-versions.txt")
+sessionInfo()
+sink()
