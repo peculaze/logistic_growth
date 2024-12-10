@@ -1,6 +1,3 @@
-## HIII
-### I Absolutely know what I'm doing B)
-
 # Logistic Growth Analysis
 
 A population of bacteria newly introduced into a nutrient medium are expected to undergo logistic growth, as described by the following differential equation, where N is the population size, r is growth rate, K is carrying capacity, and t is time. 
