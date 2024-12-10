@@ -63,7 +63,7 @@ Plugging 4980 into this equation as t, with N<sub>0</sub> = 986.5075 and r = 0.0
   <img src="https://github.com/user-attachments/assets/d85d4153-e73b-4795-854f-5f3b04b3fc9c">
 </p>
 
-***Fig. 2.** a) A plot showing the different growth patterns between a population undergoing exponential growth (yellow) vs a population undergoing logistic growth (orange). b) The same plot, with a log-transformed y axis to display the full exponential curve.*
+***Fig. 2.** a) A plot showing the different growth patterns between a population undergoing exponential growth (yellow) vs a population undergoing logistic growth (orange). b) The same plot, with a log-transformed y axis to display the full exponential curve. See `exponential_growth_model.R` for the code producing this plot*
 
 
 
