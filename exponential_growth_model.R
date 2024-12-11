@@ -19,10 +19,6 @@ exponential_fun <- function(t) {
   return(N)
 }
 
-exponential_fun(4980) # Outputs 4.37e+24
-
-exponential_
-
 
 ## Graph comparing exponential and logistic curves: 
 
