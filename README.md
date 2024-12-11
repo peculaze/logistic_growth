@@ -60,7 +60,8 @@ Plugging 4980 into this equation as t, with N<sub>0</sub> = 986.5075 and r = 0.0
 ## 3) Plot Comparing Exponential and Logistic Growth
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d85d4153-e73b-4795-854f-5f3b04b3fc9c">
+  <img src="https://github.com/user-attachments/assets/c5d1fd25-088c-40e3-a315-7b38e58321a4")
+>
 </p>
 
 ***Fig. 2.** a) A plot showing the different growth patterns between a population undergoing exponential growth (yellow) vs a population undergoing logistic growth (orange). b) The same plot, with a log-transformed y axis to display the full exponential curve. See `exponential_growth_model.R` for the code producing this plot*
