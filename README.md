@@ -1,9 +1,6 @@
-## HIII
-### I Absolutely know what I'm doing B)
-
 # Logistic Growth Analysis
 
-A population of bacteria newly introduced into a nutrient medium are expected to undergo logistic growth, as described by the following differential equation, where N is the population size, r is growth rate, K is carrying capacity, and t is time. 
+A population of bacteria newly introduced into a nutrient medium is expected to undergo logistic growth, as described by the following differential equation, where N is the population size, r is growth rate, K is carrying capacity, and t is time. 
 
 ```math
 \begin{equation}
@@ -19,11 +16,11 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 \end{equation}
 ```
 
-To test this, a dataset was downloaded which originated from a simulated experiment of bacterial growth (available at https://osf.io/gm2hq/ as 'experiment.csv'), and the logistic growth model was applied.##
+To test this, a dataset from a simulated experiment of bacterial growth was downloaded (available at https://osf.io/gm2hq/ as 'experiment.csv'), and the logistic growth model was mapped onto these datapoints.
 
 ## 1) Results
 
-To estimate N<sub>0</sub> and r, the logistic growth data was truncated to include only the section resembling exponential growth, a log transform was applied to N, and a linear model was fitted. The predictions of the intercept (after reversing the log transform) and slope were taken to be N<sub>0</sub> and r respectively. K was predicted by taking a section of the logistic curve starting after N had reached carrying capacity. The estimates are as follows: 
+To estimate N<sub>0</sub> and r, the logistic growth data was truncated to include only the section resembling exponential growth, a log transform was applied to N, and a linear model was fitted. The predictions of the intercept (after reversing the log transform) and slope were taken to be N<sub>0</sub> and r respectively (the value of N<sub>0</sub> from the input dataset differs slightly from the value predicted under the linear model). K was predicted by taking a section of the logistic curve starting after N had reached carrying capacity. The estimates are as follows: 
 
 ```math
 \begin{equation}
@@ -63,10 +60,11 @@ Plugging 4980 into this equation as t, with N<sub>0</sub> = 986.5075 and r = 0.0
 ## 3) Plot Comparing Exponential and Logistic Growth
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d85d4153-e73b-4795-854f-5f3b04b3fc9c">
+  <img src="https://github.com/user-attachments/assets/c5d1fd25-088c-40e3-a315-7b38e58321a4")
+>
 </p>
 
-***Fig. 2.** a) A plot showing the different growth patterns between a population undergoing exponential growth (yellow) vs a population undergoing logistic growth (orange). b) The same plot, with a logarithmic y scale.*##
+***Fig. 2.** a) A plot showing the different growth patterns between a population undergoing exponential growth (yellow) vs a population undergoing logistic growth (orange). b) The same plot, with a log-transformed y axis to display the full exponential curve. See `exponential_growth_model.R` for the code producing this plot*
 
 
 
