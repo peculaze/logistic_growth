@@ -40,7 +40,7 @@ K = 6.00*10^{10}
 ##
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8653c1fc-f80e-4fb8-9b7f-67b53284008e">
+  <img src="https://github.com/user-attachments/assets/8fa1ae80-5716-4262-b6ac-9abc26e3010a">
 </p>
 
 ***Fig. 1.** A plot showing the logistic growth model overlaid on datapoints from the simulated bacterial growth experiment from experiment.csv.*
@@ -60,9 +60,9 @@ Plugging 4980 into this equation as t, with N<sub>0</sub> = 986.5075 and r = 0.0
 ## 3) Plot Comparing Exponential and Logistic Growth
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c5d1fd25-088c-40e3-a315-7b38e58321a4")
->
+  <img src="https://github.com/user-attachments/assets/aac55a66-4153-4399-b55a-3e6f25ebf00b">
 </p>
+
 
 ***Fig. 2.** a) A plot showing the different growth patterns between a population undergoing exponential growth (yellow) vs a population undergoing logistic growth (orange). b) The same plot, with a log-transformed y axis to display the full exponential curve. See `exponential_growth_model.R` for the code producing this plot*
 
