@@ -21,9 +21,9 @@ K <- 60000000000 #
 
 ggplot(aes(t,N), data = growth_data) +
   
-  geom_point(colour = "red") + 
+  geom_point(colour = "#24C9D2") + 
   
-  geom_function(fun=logistic_fun, colour="#e9f000") + 
+  geom_function(fun=logistic_fun, colour="#F7EF7D", lwd = 0.7) + 
   
   theme_classic() + 
   

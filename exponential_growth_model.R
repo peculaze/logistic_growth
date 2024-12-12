@@ -33,7 +33,7 @@ comparison.plot.basic <- ggplot(data.frame(t = c(0, 5000)), aes(x = t)) +
   xlim(0,3000) + 
   ylim(0,600000000000) + 
   labs(x="Time",y="Population Size") + 
-  scale_colour_manual(values = c("#e9f000","#f06000")) +
+  scale_colour_manual(values = c("#F7EF7D","#24C9D2")) + #F5ACBD
   theme_classic() + 
   theme(plot.background = element_rect(fill = "#0E1116"), 
         panel.background = element_rect(fill = "#0E1116"), 
@@ -49,8 +49,8 @@ comparison.plot.basic <- ggplot(data.frame(t = c(0, 5000)), aes(x = t)) +
 # Same but with log transform on population size. 
 
 comparison.plot.log <- ggplot(data.frame(t = c(0, 5000)), aes(x = t)) + 
-  geom_function(fun = logistic_fun, col = "#f06000", lwd=1.1) + 
-  geom_function(fun = exponential_fun, col = "#e9f000", lwd=0.7) + 
+  geom_function(fun = logistic_fun, col = "#24C9D2", lwd=1.1) + 
+  geom_function(fun = exponential_fun, col = "#F7EF7D", lwd=0.7) + 
   xlim(0,3000) + 
   ylim(0,600000000000) + 
   labs(x="Time",y="Population Size (log transform)") + 
@@ -66,7 +66,7 @@ comparison.plot.log <- ggplot(data.frame(t = c(0, 5000)), aes(x = t)) +
 
 # Combine plots using ggpubr package
 ggarrange(comparison.plot.basic,comparison.plot.log, nrow = 1, 
-          labels = c("a)","b)"), font.label = list(size = 12, color = "yellow"), 
+          labels = c("a)","b)"), font.label = list(size = 12, color = "#F7EF7D"), 
           common.legend = TRUE, legend = "bottom") + bgcolor("#0E1116") 
 
 sink(file = "package-versions.txt")
