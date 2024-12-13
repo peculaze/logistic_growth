@@ -9,11 +9,11 @@ logistic_fun <- function(t) {
   return(N)
   
 }
+exp(6.8941709)
+(N0*K*exp(r*60))/(K-N0+N0*exp(r*60))
 
-
-
-N0 <- exp(6.8941709) #
-N0 <- 879
+N0 <- 879 # Starting point from data, not model
+N0 <- exp(6.8941709) # Starting point extrapolated from model
   
 r <- 0.0100086 #
   
@@ -21,9 +21,21 @@ K <- 60000000000 #
 
 ggplot(aes(t,N), data = growth_data) +
   
-  geom_function(fun=logistic_fun, colour="red") +
+  geom_point(colour = "#24C9D2") + 
   
-  geom_point() 
+  geom_function(fun=logistic_fun, colour="#F7EF7D", lwd = 0.7) + 
+  
+  theme_classic() + 
+  
+  theme(plot.background = element_rect(fill = "#0E1116"), 
+        panel.background = element_rect(fill = "#0E1116"), 
+        axis.text = element_text(colour = "white"), 
+        axis.title = element_text(colour = "white", face = "bold"), 
+        axis.ticks = element_line(colour = "#eeeeee"), 
+        axis.line.x = element_line(colour = "#eeeeee"),
+        axis.line.y = element_line(colour = "#eeeeee")) + 
+  
+  labs(x="Time", y="Population Size")
 
   scale_y_continuous(trans='log10')
 
